@@ -1,7 +1,7 @@
-// C++ program to implement Binary Search
+// C program to implement Binary Search
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+
 
 int binarySearch(int arr[], int l, int r, int x)
 {
@@ -29,7 +29,7 @@ int main()
 	int n = sizeof(arr) / sizeof(arr[0]);
 	int x = 10;
 	int result = binarySearch(arr, 0, n - 1, x);
-	(result == -1) ? cout<<"Element is not present in array"<<endl : cout<<"Element is present at index "<<result<<endl;
+	(result == -1) ? printf("Element is not present in array\n"): printf("Element is present at index %d \n",result);
 
 	return 0;
 }
